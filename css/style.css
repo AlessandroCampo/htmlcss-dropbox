@@ -4,7 +4,105 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+/* Tag resets */
+
+html {
+    font-family: 'Khula', sans-serif;
+}
+
 a {
     color: black;
     text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    /* width: 100%; */
+    display: block;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 2em;
+    padding-inline: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.header-left ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+.header-right ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.header-right button {}
+
+.section-content {
+    display: flex;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.section-img {
+    position: relative;
+    flex-basis: 70%;
+}
+
+.section-text {
+    flex-basis: 30%;
+    font-size: 19px;
+}
+
+section.first img {
+    position: absolute;
+    width: 100%;
+}
+
+section.first button,
+.header-right button {
+
+    padding: 8px 12px;
+    color: white;
+    background-color: #0061ff;
+    border: 0;
+    font-size: 17px;
+}
+
+section.first button {
+    margin-block: 1.5em;
+}
+
+.arrow-down {
+    margin-top: 80px;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.first {
+    background-color: #b4d0e7;
+
+}
+
+section h1 {
+    text-align: left;
+    font-size: 70px;
+    font-weight: 800;
+    padding: 1.5em 0 0.5em 0;
+    width: 60vw;
+    margin: 0 auto;
 }
