@@ -10,11 +10,20 @@
 
 html {
     font-family: 'Khula', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
     color: black;
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.blue-button:hover {
+    background-color: #2c8aff;
 }
 
 ul {
@@ -39,7 +48,7 @@ header {
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding-block: 1.5em;
+    padding-block: 1em;
     padding-inline: 20px;
 }
 
@@ -49,16 +58,20 @@ header {
     gap: 3em;
 }
 
-.header-left ul {
-    display: flex;
-    gap: 2.5em;
-}
-
+.header-left ul,
 .header-right ul {
     display: flex;
-    align-items: center;
     gap: 2.5em;
+    height: 100%;
+    align-items: center;
 }
+
+
+.header-container li a:hover {
+    border-bottom: 3px solid gray;
+    padding-bottom: 1.5em;
+}
+
 
 .section-content {
     display: flex;
@@ -83,10 +96,13 @@ section.first img {
 button {
 
     padding: 10px 20px;
-    color: white;
-    background-color: #0061ff;
     border: 0;
     font-size: 17px;
+}
+
+.blue-button {
+    color: white;
+    background-color: #0061ff;
 }
 
 section.first button {
@@ -106,6 +122,7 @@ section.first button {
 
 section {
     margin-bottom: 9.3em;
+    width: 100vw;
 }
 
 
@@ -151,7 +168,7 @@ section.first h1 {
 .business-plans {
     display: flex;
     justify-content: space-between;
-    gap: 3.12em;
+    gap: 3em;
     margin-bottom: 2em;
 }
 
@@ -170,6 +187,10 @@ section.first h1 {
 .plan-text {
     width: 80%;
     margin: 30px auto;
+}
+
+.plan-text span {
+    font-size: 15px;
 }
 
 .plan-text h3,
@@ -279,6 +300,7 @@ section.company {
     background-color: #f5f5f5;
     padding-inline: 50px;
     padding-top: 60px;
+    overflow: auto;
 }
 
 .company-center-text img {
@@ -369,15 +391,25 @@ section.company {
     margin-bottom: 1.6em;
 }
 
-.faq-container p {
-    padding-block: 3.15em;
+.question p {
     font-weight: bold;
+    padding-block: 3.15em;
 }
+
 
 .question {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.hidden {
+    display: none;
+    padding-bottom: 50px;
+}
+
+.question:hover+.hidden {
+    display: block;
 }
 
 footer {
@@ -441,4 +473,17 @@ footer hr {
     position: absolute;
     bottom: 58px;
     background-color: black;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+
+.highlight:hover {
+    cursor: pointer;
+}
+
+.three button:hover,
+.sixth button:hover {
+    opacity: 0.5;
 }
