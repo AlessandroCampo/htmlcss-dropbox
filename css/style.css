@@ -26,6 +26,16 @@ img {
     display: block;
 }
 
+section img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -68,7 +78,6 @@ img {
 
 section.first img {
     position: absolute;
-    width: 100%;
 }
 
 button {
@@ -99,22 +108,23 @@ section {
     margin-bottom: 9.3em;
 }
 
-section h1 {
+
+section.first h1 {
     text-align: left;
     font-size: 70px;
     font-weight: 800;
-    padding: 1.5em 0 0.5em 0;
+    padding: 2.5em 0 0.5em 0;
     width: 60vw;
     margin: 0 auto;
 }
 
-.section-container.two {
+.section-container {
     /* padding-top: 150px; */
     width: 60vw;
     margin: 0 auto;
 }
 
-.section-container.two h2 {
+.section-container h2 {
     font-size: 40px;
 }
 
@@ -204,4 +214,43 @@ section h1 {
     flex-basis: 30%;
     align-self: top;
     text-align: center;
+}
+
+.section-container.three {
+    display: flex;
+    gap: 3.12em;
+}
+
+.section-container.three figure {
+    flex-basis: 60%;
+}
+
+.section-container.three .section-text {
+    padding-top: 3.75em;
+}
+
+.section-container.three .section-text h3,
+.section-container.three .section-text p {
+    padding-bottom: 2em;
+}
+
+.section-container.three button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.card-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: calc((100% / 3) - (50px * 2 / 3))
+}
+
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 1.5em;
 }
