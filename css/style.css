@@ -29,7 +29,7 @@ img {
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding-block: 2em;
+    padding-block: 1.5em;
     padding-inline: 20px;
 }
 
@@ -49,8 +49,6 @@ img {
     align-items: center;
     gap: 2.5em;
 }
-
-.header-right button {}
 
 .section-content {
     display: flex;
@@ -73,10 +71,9 @@ section.first img {
     width: 100%;
 }
 
-section.first button,
-.header-right button {
+button {
 
-    padding: 8px 12px;
+    padding: 10px 20px;
     color: white;
     background-color: #0061ff;
     border: 0;
@@ -98,6 +95,10 @@ section.first button {
 
 }
 
+section {
+    margin-bottom: 9.3em;
+}
+
 section h1 {
     text-align: left;
     font-size: 70px;
@@ -105,4 +106,102 @@ section h1 {
     padding: 1.5em 0 0.5em 0;
     width: 60vw;
     margin: 0 auto;
+}
+
+.section-container.two {
+    /* padding-top: 150px; */
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.section-container.two h2 {
+    font-size: 40px;
+}
+
+.radio {
+    padding-block: 5em;
+}
+
+.first_label {
+    margin-right: 3.125em;
+}
+
+.highlight {
+    text-decoration: underline;
+    color: #0000ee;
+}
+
+.plan-text hr {
+    width: 20%;
+    border: 0.5px solid #d0d0d3;
+}
+
+.business-plans {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.12em;
+    margin-bottom: 2em;
+}
+
+.single {
+    border: 1px solid #d0d0d3;
+    flex-basis: calc(100% / 3);
+}
+
+
+.plan-type {
+    border-bottom: 1px solid #d0d0d3;
+    text-align: center;
+    padding-block: 10px;
+}
+
+.plan-text {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.plan-text h3,
+.team-text-left h3 {
+    font-size: 25px;
+    margin-bottom: 28px;
+}
+
+.price,
+.team-text h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3.5em;
+}
+
+.plan-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9em;
+}
+
+.plan-text button {
+    width: 100%;
+}
+
+.team {
+    border: 1px solid #d0d0d3;
+}
+
+.team-text {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 30px;
+    gap: 200px;
+}
+
+.team-text-left {
+    flex-basis: 70%;
+    padding-left: 2em;
+}
+
+
+.team-text-right {
+    flex-basis: 30%;
+    align-self: top;
+    text-align: center;
 }
