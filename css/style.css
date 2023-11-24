@@ -189,7 +189,9 @@ section.first h1 {
     margin: 30px auto;
 }
 
-.plan-text span {
+.plan-text span,
+.plan-text div,
+.plan-text button {
     font-size: 15px;
 }
 
@@ -230,6 +232,7 @@ section.first h1 {
 .team-text-left {
     flex-basis: 70%;
     padding-left: 2em;
+    font-size: 15px;
 }
 
 
@@ -238,6 +241,7 @@ section.first h1 {
     align-self: top;
     text-align: center;
 }
+
 
 .section-container.three {
     display: flex;
@@ -248,19 +252,28 @@ section.first h1 {
     flex-basis: 60%;
 }
 
-.section-container.three .section-text {
-    padding-top: 3.75em;
+.section-container.three .section-text p {
+    font-size: 17px;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
 }
 
-.section-container.three .section-text h3,
-.section-container.three .section-text p {
-    padding-bottom: 2em;
+.section-text {
+    flex-basis: 25%;
+}
+
+.section-container.three .section-text h3 {
+    padding-top: 2em;
 }
 
 .section-container.three button {
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+.section-container.four h2 {
+    margin-bottom: 2em;
 }
 
 .card-container {
