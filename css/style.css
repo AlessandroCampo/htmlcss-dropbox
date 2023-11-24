@@ -388,3 +388,57 @@ footer {
 footer a {
     color: white;
 }
+
+.footer-section-container {
+    display: flex;
+    gap: 3em;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex-basis: calc((100% / 5) - (3em * 5 / 4));
+    padding-block: 7em;
+}
+
+.footer-container h4 {
+    font-size: 22px;
+    margin-bottom: 1.5em;
+}
+
+.footer-container li {
+    font-size: 16px;
+    margin-block: 1em;
+}
+
+footer hr {
+    width: 10%;
+}
+
+#language-selection {
+    display: flex;
+    padding-block: 4em;
+}
+
+#language-selection i {
+    color: grey;
+    padding-top: 5px;
+    padding-right: 10px;
+
+
+}
+
+
+#google_translate_element select {
+    color: grey;
+    background-color: black;
+    border: 0;
+}
+
+.black-cover {
+    width: 100px;
+    height: 50px;
+    border: 0;
+    position: absolute;
+    bottom: 58px;
+    background-color: black;
+}
