@@ -99,7 +99,7 @@ section.first button {
     padding-bottom: 30px;
 }
 
-.first {
+.light-blue {
     background-color: #b4d0e7;
 
 }
@@ -118,7 +118,8 @@ section.first h1 {
     margin: 0 auto;
 }
 
-.section-container {
+.section-container,
+.footer-container {
     /* padding-top: 150px; */
     width: 60vw;
     margin: 0 auto;
@@ -341,4 +342,49 @@ section.company {
     left: 50%;
     transform: translate(-50%, -50%);
     fill: white;
+}
+
+.sixth {
+    display: flex;
+    gap: 15em;
+    align-items: top;
+    padding-block: 9.5em;
+    margin-top: -9.3em;
+}
+
+.sixth h2 {
+    width: 50%;
+    padding-left: 60px;
+    color: #61082b;
+    line-height: 130%;
+}
+
+.sixth button {
+    background-color: white;
+    color: black;
+    padding-inline: 50px;
+}
+
+.faq h2 {
+    margin-bottom: 1.6em;
+}
+
+.faq-container p {
+    padding-block: 3.15em;
+    font-weight: bold;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    color: white;
 }
